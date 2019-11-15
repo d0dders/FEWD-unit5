@@ -26,6 +26,10 @@ input[type=text] {
     
 }
 
+.gallery a {
+    text-decoration: none;
+}
+
 img[src*="thumbnails"] {
     padding: 7px;
     background-color: white;
