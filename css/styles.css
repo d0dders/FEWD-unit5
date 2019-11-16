@@ -13,6 +13,13 @@ main {
     margin-top: 30px;
 }
 
+#logo {
+    display: block;
+    margin:auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
 input[type=text] {
     background-color: #F0EFF2;
     padding: 16px;
@@ -38,6 +45,12 @@ img[src*="thumbnails"] {
     background-color: white;
     border: #9299ac 2px solid;
     margin: 6px auto;
+    transition: 0.2s;
+  
+}
+
+img[src*="thumbnails"]:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 531px) {
