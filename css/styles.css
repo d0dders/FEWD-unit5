@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +27,7 @@ input[type=text] {
 
 .gallery {
     margin: 20px auto;
-    width: 90%;
+    width: 75%;
     max-width: 1000px;  
 }
 
@@ -42,6 +41,7 @@ img[src*="thumbnails"] {
     border: #9299ac 2px solid;
     margin: 6px auto;
     transition: 0.2s;
+    width: 100%;
   
 }
 
@@ -49,13 +49,12 @@ img[src*="thumbnails"]:hover {
     transform: scale(1.05);
 }
 
-@media (max-width: 531px) {
-    img[src*="thumbnails"] {
-        width: 100%;
-    }
-
+@media (min-width: 531px) {
     .gallery {
-        width: 75%;
+        width: 90%;
     }
-
+    
+    img[src*="thumbnails"] {
+     width: auto;    
+    }
 }
